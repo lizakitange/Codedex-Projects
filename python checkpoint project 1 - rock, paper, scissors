@@ -1,0 +1,28 @@
+# This is a simple Rock, Paper, Scissors game
+import random
+rock = 1
+paper = 2
+scissors = 3
+print("1) ✊🏽")
+print("2) ✋🏽")
+print("3) ✌🏽")
+player = int(input("Pick a number: "))
+computer = random.randint(1, 3)
+if player == computer:
+    print("It's a tie!")
+elif player == 1 and computer == 3:
+    print("You win! Rock crushes scissors.")
+elif player == 2 and computer == 1:
+    print("You win! Paper covers rock.")
+elif player == 3 and computer == 2:
+    print("You win! Scissors cuts paper.")
+elif player == 1 and computer == 2:
+    print("You lose! Paper covers rock.")
+elif player == 2 and computer == 3:
+    print("You lose! Scissors cuts paper.")
+elif player == 3 and computer == 1:
+    print("You lose! Rock crushes scissors.")
+elif player < 1 or player > 3:
+    print("Invalid input! Please pick a number between 1 and 3.")
+import random
+
